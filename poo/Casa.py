@@ -1,14 +1,13 @@
 class Casa:
-    def __init__(self):
-        self.propietario = "Juan Pérez"
-        self.m2 = 500
-        self.ubicacion = "Zona residencial norte"
-        self.precio = 250000
-        self.coordenada = "-12.0464, -77.0428"
-        self.partida = "0501-001-000123"
-        self.departamento = "Lima"
-        self.provincia = "Lima"
-        self.distrito = "San Isidro"
+    propietario = "Juan Pérez"
+    m2 = 500
+    ubicacion = "Zona residencial norte"
+    precio = 250000
+    coordenada = "-12.0464, -77.0428"
+    partida = "0501-001-000123"
+    departamento = "Lima"
+    provincia = "Lima"
+    distrito = "San Isidro"
 
     def setpropietario(self, propietario):
         self.propietario = propietario
@@ -76,6 +75,7 @@ class Casa:
         """
 
 casa = Casa()
+
 print("=== DATOS ORIGINALES ===")
 print(casa.info_completa())
 
@@ -88,5 +88,5 @@ casa.setcoordenada("-12.0671, -77.0282")
 casa.setpartida("0501-001-000456")
 casa.setdistrito("San Isidro")
 
-print("\n=== NUEVOS DATOS (Cambio de propietario y venta parcial) ===")
+print("\n=== NUEVOS DATOS ===")
 print(casa.info_completa())
